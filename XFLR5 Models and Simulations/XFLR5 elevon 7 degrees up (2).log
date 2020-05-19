@@ -1,0 +1,173 @@
+
+xflr5 v6.47
+17.04.2020  21:56:14
+
+Launching Analysis
+
+Launching the 3D Panel Analysis....
+flying wing
+Type 7 - Stability polar
+
+Wings as thin surfaces
+Using ring vortices - VLM2
+Using Neumann boundary conditions for wings
+
+Density   =       1.225kg/m3
+Viscosity =     1.5e-05m²/s
+
+Reference Area   =     0.28437m²
+Reference length =      1.5998m
+
+Counted  676 panel elements
+
+
+   Solving the problem... 
+
+      Calculation for control position  0.00
+   Mass=       1.200 kg
+
+   ___Center of Gravity Position - Body axis____
+    CoG_x=      0.1738 m
+    CoG_y=     -0.0000 m
+    CoG_z=      0.0013 m
+
+   ___Inertia - Body Axis - CoG Origin____
+    Ibxx=      0.1001 kg.m²
+    Ibyy=     0.01189 kg.m²
+    Ibzz=       0.112 kg.m²
+    Ibxz=  -0.0001611 kg.m²
+
+         Rotating the flap by  0.00°, total angle is -7.00°
+         Rotating the flap by  0.00°, total angle is -7.00°
+         Rotating the flap by  0.00°, total angle is -7.00°
+         Rotating the flap by  0.00°, total angle is -7.00°
+      Creating the unit RHS vectors...
+      Creating the influence matrix...
+      Performing LU Matrix decomposition...
+      Solving the LU system...
+      Time for linear system solve: 0.069 s
+      Searching for zero-moment angle... Alpha=11.66654°
+      Creating source strengths...
+      Calculating doublet strength...
+      Calculating speed to balance the weight...VInf = 9.41235 m/s
+
+      ___Inertia - Stability Axis - CoG Origin____
+      Isxx=      0.1007 
+      Isyy=     0.01189 
+      Iszz=      0.1115 
+      Isxz=   -0.002497 
+
+      Calculating the stability derivatives
+         Creating the RHS translation vectors
+         LU solving for RHS - longitudinal
+         Calculating forces and derivatives - lateral
+         Creating the RHS rotation vectors
+         LU solving for RHS - lateral
+         Calculating forces and derivatives - lateral
+      Calculating the control derivatives
+
+      Longitudinal derivatives
+      Xu=   -0.094132         Cxu=   -0.057417
+      Xw=     0.89644         Cxa=      0.5468
+      Zu=     -2.5347         Czu=    -0.02033
+      Zw=     -7.4697         CLa=      4.5563
+      Zq=    -0.91465         CLq=      5.8408
+      Mu= -6.7223e-07         Cmu= -2.1464e-06
+      Mw=     -0.2448         Cma=    -0.78163
+      Mq=   -0.082976         Cmq=     -2.7736
+      Neutral Point position=   0.20656 m
+
+
+      Lateral derivatives
+      Yv=  -0.0070313         CYb=  -0.0042889
+      Yp=     0.15955         CYp=     0.12167
+      Yr=  -0.0043771         CYr=  -0.0033377
+      Lv=    -0.14709         Clb=   -0.056082
+      Lp=     -1.0704         Clp=    -0.51019
+      Lr=     0.24261         Clr=     0.11564
+      Nv=    0.030446         Cnb=    0.011608
+      Np=    -0.17303         Cnp=   -0.082472
+      Nr=  0.00018261         Cnr=  8.7039e-05
+
+      Control derivatives 
+      Xde=    -0.18214        CXde=   -0.011804
+      Yde=   1.856e-05        CYde=  1.2028e-06
+      Zde=      8.6879        CZde=     0.56302
+      Lde=  1.7934e-07        CLde=  7.2645e-09
+      Mde=      1.4925        CMde=      0.5063
+      Nde=  4.8744e-10        CNde=  1.9745e-11
+
+
+      _____State matrices__________
+       Longitudinal state matrix
+            -0.0784431            0.747032                   0               -9.81
+              -2.11227            -6.22478             8.65014                   0
+          -5.65549e-05            -20.5952            -6.98077                   0
+                     0                   0                   1                   0
+       Lateral state matrix
+           -0.00585942            0.132961            -9.41599                9.81
+              -1.46839            -10.5976             2.41072                   0
+              0.306059            -1.31505          -0.0523615                   0
+                     0                   1                   0                   0
+
+      _____Control Matrices__________
+       Longitudinal control matrix
+         -0.1517873
+           7.239911
+           125.5648
+                  0
+
+       Lateral control matrix
+       1.546699e-05
+        1.78189e-06
+      -3.554084e-08
+                  0
+
+
+
+      ___Longitudinal modes____
+
+      Eigenvalue:     -6.635+   -13.35i   |      -6.635+    13.35i   |   -0.006531+   -1.386i   |   -0.006531+    1.386i
+                    _____________________________________________________________________________________________________
+      Eigenvector:         1+        0i   |           1+        0i   |           1+        0i   |           1+        0i
+                       32.08+   -2.303i   |       32.08+    2.303i   |    -0.06773+ 0.007693i   |    -0.06773+-0.007693i
+                      -4.832+   -49.39i   |      -4.832+    49.39i   |      0.1967+  0.01638i   |      0.1967+ -0.01638i
+                       3.111+    1.185i   |       3.111+   -1.185i   |    -0.01249+   0.1419i   |    -0.01249+  -0.1419i
+
+
+
+      ___Lateral modes____
+
+      Eigenvalue:     -10.58+        0i   |    -0.09066+   -2.456i   |    -0.09066+    2.456i   |      0.1015+        0i
+                    _____________________________________________________________________________________________________
+      Eigenvector:         1+        0i   |           1+        0i   |           1+        0i   |           1+        0i
+                       5.501+        0i   |     -0.1419+  0.01288i   |     -0.1419+ -0.01288i   |      0.1063+        0i
+                      0.6583+        0i   |    0.003766+   0.2007i   |    0.003766+  -0.2007i   |       1.081+        0i
+                     -0.5201+        0i   |   -0.003106+  -0.0579i   |   -0.003106+   0.0579i   |       1.047+        0i
+
+      Calculating aerodynamic coefficients in the far field plane
+        Calculating point   11.67°....
+      Computing On-Body Speeds...
+      Computing Plane for alpha=  11.67°
+       Calculating aerodynamic coefficients...
+         Calculating wing...Main Wing
+
+   Phillips formulae:
+       Phugoid eigenvalue:      -0.01218+  1.32999i
+               frequency:  0.212 Hz
+               damping:    0.009
+       Dutch-Roll eigenvalue:   -0.13869+  2.43553i
+               frequency:  0.388 Hz
+               damping:    0.057
+
+
+     ______Finished operating point calculation for control position  0.00________
+
+
+
+
+
+Panel Analysis completed successfully
+
+Analysis ended 17 April 2020 21:56:14
+Elapsed: 0.446s
