@@ -13,5 +13,6 @@ And many diagrams explaining the overall architecture, system requirements, spec
 
 ![](Diagrams/SystemArchitectureFYP.jpeg)
 
+![](Diagrams/LQGarchitecture.jpeg)
 
 ![](Diagrams/DroneRecognition.png)
