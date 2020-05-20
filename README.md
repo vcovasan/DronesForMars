@@ -10,3 +10,5 @@ The repository includes the following:
 6. Arduino implementation of the autopilot, automatically generated with Matlab Embedded Coder
 
 And many diagrams explaining the overall architecture, system requirements, specifications and test cases.
+
+![](Diagrams/SystemsArchitectureFYP.jpeg)
