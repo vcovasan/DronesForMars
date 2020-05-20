@@ -11,4 +11,4 @@ The repository includes the following:
 
 And many diagrams explaining the overall architecture, system requirements, specifications and test cases.
 
-![](Diagrams/SystemsArchitectureFYP.jpeg)
+![](Diagrams/SystemArchitectureFYP.jpeg)
